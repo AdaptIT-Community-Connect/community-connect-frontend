@@ -34,9 +34,11 @@
 }
 
 .card {
+  border: 1px solid hsl(var(--border));
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
 }
+
