@@ -68,46 +68,46 @@ export default tseslint.config([
 ])
 ```
 ### Team workflow 
-Here's what to do when cloning: 
-**Clone the repo**
- git clone https://github.com/AdaptIT-Community-Connect/community-connect-frontend.git
+####Here's what to do when cloning: 
+- **Clone the repo**
+  - git clone https://github.com/AdaptIT-Community-Connect/community-connect-frontend.git
 
-**Go into the project folder**
-cd community-connect-frontend
+- **Go into the project folder**
+  - cd community-connect-frontend
 
-**Switch to dev branch (where you’ll work)**
-git checkout dev
+- **Switch to dev branch (where you’ll work)**
+   - git checkout dev
 
-**Install dependencies**
-npm install
+- **Install dependencies**
+   - npm install
 
-**Run the project locally**
-npm run dev
+- **Run the project locally**
+   - npm run dev
 
 ### How to contribute 
 
-For example, if you're working on login page:
+####For example, if you're working on login page:
 
-**make sure dev is up to date**
-git checkout dev
-git pull origin dev
+- **make sure dev is up to date**
+  - git checkout dev
+  - git pull origin dev
 
-**create a feature branch**
-git checkout -b feature/login-page
+- **create a feature branch**
+   - git checkout -b feature/login-page
 
-**work on files...**
-git add .
-git commit -m "feat: add login page"
+- **work on files...**
+   - git add .
+   - git commit -m "feat: add login page"
 
-**push branch**
-git push origin feature/login-page
+- **push branch**
+   - git push origin feature/login-page
 
-**Then on GitHub:**
-- Open a Pull Request from feature/login-page to dev
-- After review, merge into dev
+-**Then on GitHub:**
+   - Open a Pull Request from feature/login-page to dev
+   - After review, merge into dev
 
-**Merging into main**
-At the end:
-- Test everything on dev
-- When stable, merge dev into main
-- main is what we'll deploy
+-**Merging into main**
+   -At the end:
+    - Test everything on dev
+    - When stable, merge dev into main
+    - main is what we'll deploy
