@@ -68,7 +68,7 @@ export default tseslint.config([
 ])
 ```
 ### Team workflow 
-####Here's what to do when cloning: 
+#### Here's what to do when cloning: 
 - **Clone the repo**
   - git clone https://github.com/AdaptIT-Community-Connect/community-connect-frontend.git
 
@@ -86,7 +86,7 @@ export default tseslint.config([
 
 ### How to contribute 
 
-####For example, if you're working on login page:
+#### For example, if you're working on login page:
 
 - **make sure dev is up to date**
   - git checkout dev
@@ -102,12 +102,12 @@ export default tseslint.config([
 - **push branch**
    - git push origin feature/login-page
 
--**Then on GitHub:**
+- **Then on GitHub:**
    - Open a Pull Request from feature/login-page to dev
    - After review, merge into dev
 
--**Merging into main**
-   -At the end:
+- **Merging into main**
+   - At the end:
     - Test everything on dev
     - When stable, merge dev into main
     - main is what we'll deploy
