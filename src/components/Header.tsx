@@ -6,11 +6,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-            <span className="text-white text-sm font-bold">CY</span>
-          </div>
-          <span className="text-xl font-bold text-foreground">CommunityYouth</span>
+        <div className="flex items-center space-x-3 cursor-pointer">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-hero">
+              <span className="text-lg font-bold text-primary-foreground">Y</span>
+            </div>
+            <div>
+              <h1 className="text-lg font-bold text-foreground">Youth Aid Hub</h1>
+              <p className="text-xs text-muted-foreground">Community • Skills • Growth</p>
+            </div>
         </div>
 
         {/* Navigation */}
