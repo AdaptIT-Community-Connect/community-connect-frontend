@@ -26,11 +26,8 @@ const Header = () => {
             {window.location.pathname === '/' ? (
               <>
                 {/* Landing Page - Auth Buttons */}
-                <Button variant="ghost" onClick={() => navigate('/home')}>
-                  Sign In
-                </Button>
-                <Button variant="default" onClick={() => navigate('/home')}>
-                  Sign Up
+                <Button variant="default" onClick={() => navigate('/login')}>
+                  Create Account
                 </Button>
               </>
             ) : (
