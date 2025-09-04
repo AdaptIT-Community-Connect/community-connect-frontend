@@ -13,6 +13,7 @@ import Chat from "./pages/Chat";
 import Browse from "./pages/Browse";
 import Notifications from "./pages/Notifications";
 import NotFound from "./pages/NotFound";
+import SignUpPage from "./pages/loginPage";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/login" element={<SignUpPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/browse" element={<Browse />} />
           <Route path="/post-job" element={<PostJob />} />

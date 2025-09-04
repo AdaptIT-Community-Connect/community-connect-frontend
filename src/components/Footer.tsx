@@ -81,7 +81,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 CommunityYouth. All rights reserved. Empowering communities, one connection at a time.
+            © 2025 CommunityYouth. All rights reserved. Empowering communities, one connection at a time.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm transition-colors">
