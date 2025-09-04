@@ -15,8 +15,8 @@ const Messages = () => {
   const conversations = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      lastMessage: "Thanks for the help with the garden project!",
+      name: "Skonie",
+      lastMessage: "Hambaaaa namadolo wescoboshelo",
       timestamp: "2 min ago",
       unread: 2,
       avatar: "/placeholder.svg",
@@ -24,7 +24,7 @@ const Messages = () => {
     },
     {
       id: 2,
-      name: "Mike Chen",
+      name: "Naledi",
       lastMessage: "Are you available for the tutoring session tomorrow?",
       timestamp: "1 hour ago",
       unread: 0,
