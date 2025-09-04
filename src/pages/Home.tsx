@@ -1,27 +1,19 @@
-import React from 'react';
 import Header from '@/components/Header';
-import HeroSection from '@/components/HeroSection';
-import MissionSection from '@/components/MissionSection';
-import Footer from '@/components/Footer';
 import QuickActionCards from '@/components/QuickActionCards';
 import ActiveJobsFeed from '@/components/ActiveJobsFeed';
 import BottomNavigation from '@/components/BottomNavigation';
 
-
-const Index = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main>
-        <HeroSection />
-        <MissionSection />
+      <main className="pb-20 pt-6">
         <QuickActionCards />
         <ActiveJobsFeed />
       </main>
-       <BottomNavigation />
-      <Footer />
+      <BottomNavigation />
     </div>
   );
 };
 
-export default Index;
+export default Home;
