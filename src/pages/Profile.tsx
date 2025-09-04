@@ -24,17 +24,17 @@ const Profile = () => {
   console.log('Profile component loading, Header:', Header);
   // Mock user data
   const user = {
-    name: "Thabo Mthembu",
+    name: "Ntokozo Skosana",
     age: 19,
-    location: "Johannesburg, Gauteng",
+    location: "KwaNdebele, Mpumalanga",
     avatar: "/placeholder.svg",
     rating: 4.8,
     completedJobs: 23,
     joinDate: "March 2024",
-    phone: "+27 71 234 5678",
-    email: "thabo.mthembu@email.com",
-    bio: "Passionate tech enthusiast helping my community with computer repairs and digital literacy. Available for home visits and remote support.",
-    skills: ["Computer Repair", "Phone Setup", "WiFi Installation", "Data Recovery", "Software Installation"],
+    phone: "+27 76 356 9282",
+    email: "skosanantokozo83@gmail.com",
+    bio: "University of the Witwatersrand Computer science sudent who's passionate about software development, data, and fintech innovation.",
+    skills: ["Full-stack web application development", "Database Management", "Programming skills", "Graphical application and visualisation", "Software Installation"],
     recentJobs: [
       { id: 1, title: "Laptop Screen Repair", client: "Sarah K.", rating: 5, date: "2 days ago", amount: "R450" },
       { id: 2, title: "WiFi Setup", client: "John D.", rating: 5, date: "1 week ago", amount: "R200" },
