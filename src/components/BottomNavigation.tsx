@@ -14,7 +14,7 @@ const BottomNavigation = () => {
     { icon: Plus, label: "Post Job", path: "/post-job", badge: null },
     { icon: ClipboardList, label: "Applications", path: "/applicationlist", badge: null },
     { icon: Briefcase, label: "My Jobs", path: "/myjobs", badge: null },
-    { icon: MessageCircle, label: "Messages", path: "/messages", badge: 2 },
+    { icon: MessageCircle, label: "Messages", path: "/notifications", badge: 2 },
     { icon: User, label: "Profile", path: "/profile", badge: null },
   ]
 
@@ -23,7 +23,7 @@ const BottomNavigation = () => {
       return location.pathname === "/"
     }
     if (path === "/messages") {
-      return location.pathname === "/messages" || location.pathname.startsWith("/chat")
+      return location.pathname === "/messages" || location.pathname.startsWith("/notifications")
     }
     return location.pathname === path
   }
