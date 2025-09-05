@@ -10,6 +10,7 @@ import {
   type UserCredential,
 } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
+import Header from '@/components/Header';
 
 // Define type for Google callback response
 interface GoogleResponse {
@@ -131,6 +132,7 @@ const SignUpPage: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800">
+      <Header/>
       <section className="flex-1 flex flex-col justify-center items-center text-center px-6 py-20">
         <h1 className="text-5xl font-extrabold text-indigo-700 mb-4">
           {isRegistering ? "Sign Up for Youth Aid Hub" : "Log In to Youth Aid Hub "}

@@ -14,6 +14,9 @@ import Browse from "./pages/Browse";
 import Notifications from "./pages/Notifications";
 import NotFound from "./pages/NotFound";
 import SignUpPage from "./pages/loginPage";
+import ApplicationList from "./pages/ApplicationList";
+import MyJobsPage from "./pages/MyJobsPage";
+import ProtectedRoute from "@/components/ProtectedRoute"; // ✅ Import
 
 const queryClient = new QueryClient();
 
@@ -24,17 +27,93 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+          {/* Public routes */}
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<SignUpPage />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/browse" element={<Browse />} />
-          <Route path="/post-job" element={<PostJob />} />
-          <Route path="/job/:id" element={<JobDetail />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/messages" element={<Messages />} />
-          <Route path="/chat/:id" element={<Chat />} />
-          <Route path="/notifications" element={<Notifications />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+
+          {/* Protected routes */}
+          <Route
+            path="/home"
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/browse"
+            element={
+              <ProtectedRoute>
+                <Browse />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/post-job"
+            element={
+              <ProtectedRoute>
+                <PostJob />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/job/:id"
+            element={
+              <ProtectedRoute>
+                <JobDetail />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/messages"
+            element={
+              <ProtectedRoute>
+                <Messages />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/chat/:id"
+            element={
+              <ProtectedRoute>
+                <Chat />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/notifications"
+            element={
+              <ProtectedRoute>
+                <Notifications />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/applicationlist"
+            element={
+              <ProtectedRoute>
+                <ApplicationList />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/myjobs"
+            element={
+              <ProtectedRoute>
+                <MyJobsPage />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* Catch-all */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
