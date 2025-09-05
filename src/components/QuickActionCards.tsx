@@ -10,7 +10,6 @@ const QuickActionCards = () => {
       title: 'Home Maintenance',
       description: 'Plumbing, electrical, gardening, cleaning, and repairs',
       icon: Home,
-      priceRange: 'R50 - R500',
       color: 'bg-gradient-to-br from-primary to-primary-glow',
       jobs: 156,
     },
@@ -19,7 +18,6 @@ const QuickActionCards = () => {
       title: 'Tech Services',
       description: 'Computer repair, phone setup, smart home installation',
       icon: Laptop,
-      priceRange: 'R80 - R800',
       color: 'bg-gradient-to-br from-accent to-accent-glow',
       jobs: 89,
     },
@@ -28,7 +26,6 @@ const QuickActionCards = () => {
       title: 'Educational Help',
       description: 'Tutoring, homework help, language lessons, skills training',
       icon: BookOpen,
-      priceRange: 'R40 - R300',
       color: 'bg-gradient-to-br from-secondary to-secondary-glow',
       jobs: 203,
     },
@@ -37,7 +34,6 @@ const QuickActionCards = () => {
       title: 'Report Issue',
       description: 'Community problems, safety concerns, infrastructure issues',
       icon: AlertTriangle,
-      priceRange: 'Free',
       color: 'bg-gradient-to-br from-destructive to-destructive/80',
       jobs: 34,
     },
@@ -57,12 +53,12 @@ const QuickActionCards = () => {
             return (
               <Card
                 key={category.id}
-                className="group cursor-pointer border-0 overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-glow"
+                className="border-0 overflow-hidden transform "
               >
                 <CardHeader className={`${category.color} text-white p-6 pb-4`}>
                   <div className="flex items-center justify-between">
                     <IconComponent className="h-8 w-8" />
-                    <ArrowRight className="h-5 w-5 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
+                    <ArrowRight className="h-5 w-5 opacity-0 " />
                   </div>
                   <CardTitle className="text-lg font-semibold mt-4">
                     {category.title}
@@ -75,9 +71,9 @@ const QuickActionCards = () => {
                   </p>
                   
                   <div className="flex items-center justify-between">
-                    <Badge variant="secondary" className="text-xs">
+                    {/* <Badge variant="secondary" className="text-xs">
                       {category.priceRange}
-                    </Badge>
+                    </Badge> */}
                     <span className="text-xs text-muted-foreground">
                       {category.jobs} active jobs
                     </span>
