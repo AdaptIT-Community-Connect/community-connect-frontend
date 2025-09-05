@@ -44,7 +44,6 @@ const QuickActionCards = () => {
       <div className="container mx-auto px-4">
         <div className="mb-8 text-center">
           <h2 className="text-3xl font-bold text-foreground mb-2">How can we help you today?</h2>
-          <p className="text-muted-foreground">Choose a category to get started</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
